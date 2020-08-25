@@ -1,0 +1,60 @@
+.promo{
+    background: url('../img/base.jpg');
+    padding: 100px 0 78px;
+    margin-bottom: 74px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    p{
+        font-size: 24px;
+        font-weight: 300;
+    }
+    h3{
+        font-size: 73px;
+        font-weight: 700;
+    }
+    button{
+        font-family: 'Open Sans', sans-serif;
+        padding: 22px 68px;
+        background: #f0002f;
+        font-size: 15px;
+        font-weight: 700;
+        color: #fff;
+        border-radius: 5px;
+    }
+}
+.promoInfo{
+    display: flex;
+    justify-content: center;
+    padding: 28px 0 46px;
+    &__price{
+        display: flex;
+        align-items: flex-start;
+        padding-right: 22px;
+        span{
+            font-weight: 700;
+            &:nth-child(1){
+                font-size: 60px;
+                font-weight: normal;
+            }
+            &:nth-child(2){
+                font-size: 107px;
+                margin-top: -5px;
+            }
+            &:nth-child(3){
+                font-size: 70px;
+            }
+        }
+    }
+    &__pizza{
+        font-size: 20px;
+        font-weight: lighter;
+        color: #c2aa7e;
+        ul{
+            text-align: left;
+            li{
+                padding-top: 10px;
+            }
+        }
+    }
+}

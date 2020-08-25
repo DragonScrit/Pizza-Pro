@@ -1,0 +1,301 @@
+@@include("./pages/_head.html")
+<body>
+    <!-- Header -->
+    @@include('./pages/_header.html')
+
+    <div class="product">
+        <div class="product-nav">
+            <div class="product-nav__breadcrumbs">
+                <a href="./index.html">Home <span>&rang;</span></a>
+                <a href="./shopGrid.html">Pizza <span>&rang;</span></a>
+                <a href="./shopGrid.html">Veggie <span>&rang;</span></a>
+                <span>Hawaii Vegetarian Pizza</span>
+            </div>
+            <div class="product-nav__arrow">
+                <button><span>&larr;</span> Previous</button>
+                <button>Next <span>&rarr;</span></button>
+            </div>
+        </div>
+        <div class="product-description">
+            <div class="product-description__images">
+                <div class="main-img"></div>
+                <div class="other-img">
+                    <div class="other-img__item"></div>
+                    <div class="other-img__item"></div>
+                </div>
+            </div>
+            <div class="product-description__info">
+                <h2>Hawaii Vegetarian Pizza</h2>
+                <p>Although the legendary Double Burger really needs no introduction, please allow us... Tucked in between three soft buns are two all-beef patties, cheddar cheese, ketchup, onion, pickles and iceberg lettuce. Hesburger's own paprika and cucumber mayonnaise add the crowning touch. Oh baby!</p>
+                <p><span>Ingredients</span>: Dr. Praeger's Black Bean Burger, Focaccia bun, Balsamic Vinaigrette, Pesto, Tomato, Swiss Cheese</p>
+            </div>
+        </div>
+    </div>
+
+    <form class="calc">
+        <div class="calc-order">
+            <div class="calc-order__option option">
+                <h2>Select crust, Size & Sauce</h2>
+                <div class="table">
+                    <div class="option__select">
+                        <p>Select crust</p>
+                        <label class="lab">
+                            <input class="true-checkbox addPrice" data-price="0" type="checkbox">
+                            <div class="fake-checkbox"></div>
+                            Original Crust
+                        </label>
+                        <label class="lab">
+                            <input class="true-checkbox addPrice" data-price="1.20" type="checkbox">
+                            <div class="fake-checkbox"></div>
+                            Thick Crust <span>($1.20)</span>
+                        </label>
+                        <label class="lab">
+                            <input class="true-checkbox addPrice" data-price="0" type="checkbox">
+                            <div class="fake-checkbox"></div>
+                            Thin Crust without sause
+                        </label>
+                        <label class="lab">
+                            <input class="true-checkbox addPrice" data-price="2.10" type="checkbox">
+                            <div class="fake-checkbox"></div>
+                            Double Crust  <span>($2.10)</span>
+                        </label>   
+                    </div>
+                    <div class="option__select">
+                        <p>Select crust</p>
+                        <label class="lab">
+                            <input class="true-checkbox addPrice" data-price="1.20"  type="checkbox">
+                            <div class="fake-checkbox"></div>
+                            Ranch Dip <span>($1.20)</span>
+                        </label>
+                        <label class="lab ">
+                            <input class="true-checkbox addPrice" data-price="2.10"  type="checkbox">
+                            <div class="fake-checkbox"></div>
+                            Creamy Mist Dip  <span>($2.10)</span>
+                        </label>
+                        <label class="lab">
+                            <input class="true-checkbox addPrice" data-price="0" type="checkbox">
+                            <div class="fake-checkbox"></div>
+                            Green Cheese Dip
+                        </label>
+                        <label class="lab">
+                            <input class="true-checkbox addPrice" data-price="2.10" type="checkbox">
+                            <div class="fake-checkbox"></div>
+                            Pizza sauce  <span>($2.10)</span>
+                        </label>
+                        <label class="lab">
+                            <input class="true-checkbox addPrice" data-price="0"  type="checkbox">
+                            <div class="fake-checkbox"></div>
+                            Las Vegas Plastic Dip
+                        </label>  
+                    </div>
+                    <div class="option__select">
+                        <p>Select crust</p>
+                        <div class="priceHolder">
+                            <div class="priceInfo">
+                                <label>
+                                    <input type="radio" data-price="19.90" name="select-size" class="true-checkbox addPrice">
+                                    <div class="pizzaSize"><span>22</span> <span>cm</span></div>
+                                </label>
+                                <div class="pizzaPrice"><span>$</span>19.90</div>
+                            </div>
+                            <div class="priceInfo">
+                                <label>
+                                    <input type="radio" data-price="25.90" name="select-size" class="true-checkbox addPrice">
+                                    <div class="pizzaSize"><span>29</span> <span>cm</span></div>
+                                </label>
+                                <div class="pizzaPrice"><span>$</span>25.90</div>
+                            </div>
+                            <div class="priceInfo">
+                                <label >
+                                    <input type="radio" data-price="32.90" name="select-size" class="true-checkbox addPrice">
+                                    <div class="pizzaSize"><span>35</span> <span>cm</span></div>
+                                </label>
+                                <div class="pizzaPrice"><span>$</span>32.90</div>
+                            </div>
+                            <div class="priceInfo">
+                                <label>
+                                    <input type="radio" data-price="41.90" name="select-size" class="true-checkbox addPrice">
+                                    <div class="pizzaSize"><span>50</span> <span>cm</span></div>
+                                </label>
+                                <div class="pizzaPrice"><span>$</span>41.90</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="calc-order__option second-option">
+                <h2>Select your Toppings</h2>
+                <div class="table">
+                    <div class="option__select">
+                        <p>Select crust</p>
+                        <label class="lab">
+                            <input class="true-checkbox addPrice" data-price="0" type="checkbox">
+                            <div class="fake-checkbox"></div>
+                            Asiago
+                        </label>
+                        <label class="lab">
+                            <input class="true-checkbox addPrice" data-price="1.20" type="checkbox">
+                            <div class="fake-checkbox"></div>
+                            Feta <span>($1.20)</span>
+                        </label>
+                        <label class="lab">
+                            <input class="true-checkbox addPrice" data-price="0" type="checkbox">
+                            <div class="fake-checkbox"></div>
+                            Cheddar
+                        </label>
+                        <label class="lab">
+                            <input class="true-checkbox addPrice" data-price="1.20" type="checkbox">
+                            <div class="fake-checkbox"></div>
+                            Pizza Mozzarella  <span>($1.20)</span>
+                        </label>
+                        <label class="lab">
+                            <input class="true-checkbox addPrice" data-price="1.20" type="checkbox">
+                            <div class="fake-checkbox"></div>
+                            Goat Cheese <span>($1.20)</span>
+                        </label>    
+                    </div>
+                    <div class="option__select">
+                        <p>Select crust</p>
+                        <label class="lab">
+                            <input class="true-checkbox addPrice" data-price="0" type="checkbox">
+                            <div class="fake-checkbox"></div>
+                            Pepperoni
+                        </label>
+                        <label class="lab">
+                            <input class="true-checkbox addPrice" data-price="1.20" type="checkbox">
+                            <div class="fake-checkbox"></div>
+                            Genoa Salami <span>($1.20)</span>
+                        </label>
+                        <label class="lab">
+                            <input class="true-checkbox addPrice" data-price="1.20" type="checkbox">
+                            <div class="fake-checkbox"></div>
+                            Smoked Ham <span>($1.20)</span>
+                        </label>
+                        <label class="lab">
+                            <input class="true-checkbox addPrice" data-price="2.10" type="checkbox">
+                            <div class="fake-checkbox"></div>
+                            Smoky Bacon  <span>($2.10)</span>
+                        </label>
+                        <label class="lab">
+                            <input class="true-checkbox addPrice" data-price="1.20" type="checkbox">
+                            <div class="fake-checkbox"></div>
+                            Chicken <span>($1.20)</span>
+                        </label>
+                        <label class="lab">
+                            <input class="true-checkbox addPrice" data-price="1.20" type="checkbox">
+                            <div class="fake-checkbox"></div>
+                            Spicy Chicken    <span>($1.20)</span>
+                        </label>
+                        <label class="lab">
+                            <input class="true-checkbox addPrice" data-price="1.20" type="checkbox">
+                            <div class="fake-checkbox"></div>
+                            BBQ Chicken <span>($1.20)</span>
+                        </label>   
+                    </div>
+                    <div class="option__select">
+                        <p>Select crust</p>
+                        <label class="lab">
+                            <input class="true-checkbox addPrice" data-price="0" type="checkbox">
+                            <div class="fake-checkbox"></div>
+                            Black Olives
+                        </label>
+                        <label class="lab">
+                            <input class="true-checkbox addPrice" data-price="0" type="checkbox">
+                            <div class="fake-checkbox"></div>
+                            Fresh Mushrooms
+                        </label>
+                        <label class="lab">
+                            <input class="true-checkbox addPrice" data-price="1.20" type="checkbox">
+                            <div class="fake-checkbox"></div>
+                            Green Peppers <span>($1.20)</span>
+                        </label>
+                        <label class="lab">
+                            <input class="true-checkbox addPrice" data-price="1.20" type="checkbox">
+                            <div class="fake-checkbox"></div>
+                            Tomatoes <span>($1.20)</span>
+                        </label>
+                        <label class="lab">
+                            <input class="true-checkbox addPrice" data-price="0" type="checkbox">
+                            <div class="fake-checkbox"></div>
+                            Marinated Artichokes
+                        </label>
+                        <label class="lab">
+                            <input class="true-checkbox addPrice" data-price="1.20" type="checkbox">
+                            <div class="fake-checkbox"></div>
+                            Onions <span>($1.20)</span>
+                        </label>
+                        <label class="lab">
+                            <input class="true-checkbox addPrice" data-price="1.20" type="checkbox">
+                            <div class="fake-checkbox"></div>
+                            Balsamic-roasted <span>($1.20)</span>
+                        </label>   
+                    </div>
+                    <div class="option__select">
+                        <p>Select crust</p>
+                        <label class="lab">
+                            <input class="true-checkbox addPrice" data-price="0" type="checkbox">
+                            <div class="fake-checkbox"></div>
+                            Red Onions
+                        </label>
+                        <label class="lab">
+                            <input class="true-checkbox addPrice" data-price="1.20" type="checkbox">
+                            <div class="fake-checkbox"></div>
+                            Pineapple <span>($1.20)</span>
+                        </label>
+                        <label class="lab">
+                            <input class="true-checkbox addPrice" data-price="0" type="checkbox">
+                            <div class="fake-checkbox"></div>
+                            Sun-dried Tomatoes
+                        </label>
+                        <label class="lab">
+                            <input class="true-checkbox addPrice" data-price="1.20" type="checkbox">
+                            <div class="fake-checkbox"></div>
+                            Red Peppers <span>($1.20)</span>
+                        </label>
+                        <label class="lab">
+                            <input class="true-checkbox addPrice" data-price="0" type="checkbox">
+                            <div class="fake-checkbox"></div>
+                            Spinach
+                        </label>  
+                        <label class="lab">
+                            <input class="true-checkbox addPrice" data-price="1.20" type="checkbox">
+                            <div class="fake-checkbox"></div>
+                            Banana <span>($1.20)</span>
+                        </label>   
+                    </div>
+                </div>
+            </div>
+            <div class="calc-order__option second-option">
+                <h2>Order Summary</h2>
+                <div class="order-summary">
+                    <div class="specialWish">
+                        <h3>Order Special Wish</h3>
+                        <input type="text" class="wish" placeholder="Type here your special order wish...">
+                    </div>
+                    <div class="all-price">
+                        <h3>Quanity</h3>
+                        <div class="quanity">
+                            <div class="quanity__pizza">
+                                <div class="minus-pizza">-</div>
+                                <div class="count">1</div>
+                                <div class="plus-pizza">+</div>
+                            </div>
+                            <div class="price">$0</div>
+                            <button class="shopping">
+                                <img src="./img/cards/shopping.png" alt="">
+                                <span>Add to Cart</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- Drinks -->
+    @@include("./pages/drinks.html")
+    <!-- Footer -->
+    @@include('./pages/_footer.html')
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>

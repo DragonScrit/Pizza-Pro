@@ -1,0 +1,96 @@
+@import 'button.scss';
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+/* -------------HEADER------------------------------- */
+header{
+    background: #c00a27;
+    color: #fff;
+    & a{
+        color: #fff;
+    }
+    nav, .container{
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+}
+/* header top */
+.navigation__top{
+    display: flex;
+    justify-content: flex-end;
+    background: url('../img/header/Pizzaro_logo.png') 0 50px no-repeat;
+    align-items: center;
+    padding: 44px 0 35px;
+    margin-bottom: 31px;
+    border-bottom: 1px solid #cb334b;
+}
+.section{
+    display: none;
+}
+.navBar{
+    display: flex;
+    padding: 20px 52px;
+    & li{
+        font-size: 15px;
+        margin-right: 45px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+.call_info{
+    text-align: right;
+    margin-right: 33px;
+    & select{
+        font-size: 14px;
+        background: none;
+        color: #fff;
+        border: none;
+        & option{
+            background: #c00a27;
+        }
+    }
+    & p:last-child{
+    font-size: 28px;
+    font-weight: bold;
+    }
+    & p:last-child{
+        font-size: 28px;
+        font-weight: bold;
+    }
+    & span{
+        color: #f79805;
+    }
+}
+.slogan{
+    border-radius: 30px;
+    background: #8ca93e;
+    padding: 15px 25px;
+    .slogan__info{
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid #226f0b;
+        padding-bottom: 10px;
+        font-weight: 700;
+        & img{ margin-right: 8px; }
+    }
+}
+/* header bottom */
+.navigation__bottom{
+    padding-bottom: 15px;
+    & .cards{
+        display: flex;
+        justify-content: space-between;
+        & .card{
+            font-weight: 700;
+            & a{
+                display: flex;
+                align-items: center;
+            }
+            & img{
+                padding-right: 20px;
+            }
+        }
+    }
+}

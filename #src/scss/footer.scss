@@ -1,0 +1,46 @@
+footer{
+    background: #2c2c2c;
+    padding: 88px 77px;
+    text-align: center;
+    p{
+        color: #7f7f7f;
+    }
+}
+.social{
+    background: url('../img/header/Pizzaro_logo.png') 50% 60% no-repeat;
+    ul {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 160px;
+        li{
+            width: 52px;
+            height: 52px;
+            margin-right: 25px;
+            border-radius: 50%;
+            border: 1px solid #969696;
+            background: url('../img/social_icons.png') 50% 50% no-repeat;
+            &:nth-child(1){background: url('../img/social_icons.png') -5% 50% no-repeat;}
+            &:nth-child(2){background: url('../img/social_icons.png') 22% 50% no-repeat;}
+            &:nth-child(3){background: url('../img/social_icons.png') 50% 50% no-repeat;}
+            &:nth-child(4){background: url('../img/social_icons.png') 78% 50% no-repeat;}
+            &:nth-child(5){background: url('../img/social_icons.png') 106% 50% no-repeat;}
+        }
+    }
+} 
+.contacts{
+    color: #ddd;
+    padding-bottom: 20px;
+    span{
+        display: inline-block;
+        white-space: nowrap;
+        padding: 0 25px;
+        margin-bottom: 10px;
+        border-right: 2px solid #991328;
+        &:last-child{
+            border-right: none;
+        }
+        a{
+            color: #ddd;
+        }
+    }
+}

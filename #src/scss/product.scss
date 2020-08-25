@@ -1,0 +1,241 @@
+.product{
+    max-width: 1170px;
+    margin: 0 auto;
+    &-nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 10px;
+        font-size: 15px;
+        border-bottom: 1px solid #e9e9e9;
+        &__breadcrumbs, a{
+            color: #333e48;
+            padding-right: 30px;
+            & span{
+                padding-left: 20px;
+            }
+        }
+        &__breadcrumbs span{
+            padding: 0px;
+        }
+        &__arrow{
+            display: flex;
+            align-items: center;
+            button{
+                background:#fff;
+                padding: 0 15px;
+                font-size: 15px;
+                border-right: 1px solid #e9e9e9;
+                color: #797979;
+                &:last-child{
+                    border: none;
+                    color: #110f0f;
+                }
+                span{
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+    &-description{
+        display: flex;
+        padding: 70px 0;
+        max-width: 1170px;
+        &__images{
+            display: flex;
+            cursor: pointer;
+            .main-img{
+                width: 470px;
+                height: 420px;
+                background: url("../img/pizza.jpg") no-repeat;
+                background-size: cover;
+            }
+            .other-img{
+                &__item{
+                    width: 70px;
+                    height: 70px;
+                    margin: 0 30px 12px;
+                    background: url("../img/pizza.jpg") no-repeat;
+                    background-size: cover;
+                    &:nth-child(2) {
+                        background: url("../img/pizza2.jpg") no-repeat;
+                        background-size: cover;
+                    }
+                    .active{
+                        border-bottom: 1px solid #ffcd00;
+                        box-shadow: 0px -5px 10px -1px #ffcd00 inset;
+                    }
+                }
+            }
+        }
+        &__info{
+            h2{
+                font-size: 28px;
+                color: #2d2b2d;
+                border-bottom: 1px solid #e9e9e9;
+                padding-bottom: 14px;
+                margin-bottom: 30px;
+            }
+            p{
+                font-size: 16px;
+                color: #707070;
+                text-align: justify;
+                padding-bottom: 40px;
+                line-height: 27px;
+                span{
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+.calc{
+    background: #f5f5f5;
+    padding: 62px 0 72px;
+    &-order{
+        margin: 0 auto;
+        max-width: 1170px;
+        &__option{
+            h2{
+                font-size: 26px;
+                color: #767676;
+                border-bottom: 1px dashed #c7c7c6;
+                padding-bottom: 17px;
+                margin-bottom: 42px;
+            }
+            .table{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .option__select{
+                    display: flex;
+                    flex-direction: column;
+                    &:last-child{
+                        padding-right: 0px;
+                    }
+                    p{
+                        font-size: 15px;
+                        font-weight: 700;
+                        padding-bottom: 30px;
+                    }
+                    .lab{
+                        color: #2b2929;
+                        padding-bottom: 15px;
+                        span{
+                            color: #ababab;
+                        }
+                        .true-checkbox{
+                            display: none;
+                        }
+                        .fake-checkbox{
+                            display: inline-block;
+                            position: relative;
+                            width: 17px;
+                            height: 17px;
+                            border: 1px solid #d2d2d2;
+                            border-radius: 5px;
+                            margin-bottom: -3px;
+                            margin-right: 10px;
+                        }
+                        .fake-checkbox::before{
+                            content: "";
+                            position: absolute;
+                            top: -1px;
+                            width: 17px;
+                            height: 17px;
+                            background: url(../img/check.png) 50% 50% no-repeat, #ffcd00;
+                            border-radius: 5px;
+                            opacity: 0;
+                        }
+                        .true-checkbox:checked + .fake-checkbox::before{
+                            opacity: 1;
+                        }
+                    }
+                    label{
+                        .pizzaSize{
+                            background: #fff;
+                            color: #2b2929;
+                            text-align: center;
+                        }
+                        .true-checkbox{
+                            display: none;
+                        }
+                        .true-checkbox:checked + .pizzaSize{
+                            background: #ffcd00;
+                        }
+                    }
+                    .priceInfo{
+                        padding-left: 30px;
+                        &:first-child{
+                            padding-left: 0px;
+                        }
+                    }
+                }
+            }
+        }
+        .second-option{
+            h2{
+                padding-top: 115px;
+            }
+        }
+        .order-summary{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .specialWish{
+                width: 570px;
+                h3{
+                    font-size: 15px;
+                    font-weight: 700;
+                    padding-bottom: 17px;
+                }
+                .wish{
+                    width: 100%;
+                    padding: 15px 28px 14px;
+                    border: 1px solid #cccccc;
+                    border-radius: 30px;
+                }
+            }
+        }
+        .all-price{
+            h3{
+                font-size: 15px;
+                    font-weight: 700;
+                    padding-bottom: 17px;
+            }
+            .quanity{
+                display: flex;
+                align-items: center;
+                &__pizza{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    padding: 10px 0;
+                    min-width: 170px;
+                    border-radius: 30px;
+                    border: 1px solid #ccc;
+                    background: #fff;
+                    font-size: 18px;
+                    color: #2d2b2d;
+                    .minus-pizza, .plus-pizza{
+                        cursor: pointer;
+                        user-select: none; 
+                        background: #fff;
+                        font-size: 25px;
+                    }
+                    .counter{
+                        margin: 0 45px;
+                    }
+                }
+                .price{
+                    font-size: 24px;
+                    color: #2d2b2d;
+                    padding: 0 30px;
+                }
+                .shopping{
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

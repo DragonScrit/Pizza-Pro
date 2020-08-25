@@ -1,0 +1,41 @@
+.faq{
+    padding: 90px 0 134px;
+    margin: 10px;
+    &__wrap{
+        max-width: 1170px;
+        margin: 0 auto;
+        .contact__header{
+            h2, p {text-align: center;}
+            h2{
+                font-size: 34px;
+                color: #454345;
+                padding-bottom: 22px;
+            }
+            p{
+                padding-bottom: 30px;
+                color: #898989;
+                font-size: 15px;
+            }
+        }
+        .ask{
+            &__item{
+                border-top: 1px solid #eee;
+                h3{
+                    cursor: pointer;
+                    font-size: 25px;
+                    color: #434343;
+                    padding: 20px 0;
+                    user-select: none;
+                }
+                p{
+                    font-size: 16px;
+                    color: #8f8f8f;
+                    padding: 10px 0 20px;
+                }
+                .hide{
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+@@include("./pages/_head.html")
+<body>
+    <!-- Header -->
+    @@include('./pages/_header.html')
+
+    <div class="complete">
+        <div class="complete-wrap">
+            <div class="order-nav">
+                <div class="order-nav__breadcrumbs">
+                    <a href="./index.html">Home <span>&rang;</span></a>
+                    <a href="./shopGrid.html">Shop <span>&rang;</span></a>
+                    <span>Shopping Cart</span>
+                </div>
+            </div>
+            <div class="order-status">
+                <div class="order-status__step">
+                    <div class="order-status__step-state first-state confirm">
+                        <p>1</p>
+                        <span>Shopping Cart</span>
+                    </div>
+                    <div class="order-status__step-line"></div>
+                </div>
+                <div class="order-status__step">
+                    <div class="order-status__step-state second-state confirm">
+                        <p>2</p>
+                        <span>Checkout</span>
+                    </div>
+                    <div class="order-status__step-line"></div>
+                </div>
+                <div class="order-status__step">
+                    <div class="order-status__step-state third-state confirm">
+                        <p>3</p>
+                        <span>Order Complete</span>
+                    </div>
+                </div>
+            </div>
+            <div class="complete-info">
+                <img src="./img/order/complete.png" alt="">
+                <p>Thank you for ordering in our restaurant. You will receive a confirmation email shortly. Now check a Pizza Tracker progress with your order.</p>
+                <!-- <button><a href="./shopGrid.html">Go To Pizza </a></button> -->
+                <a href="./shopGrid.html"><button>Go To Pizza</button></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    @@include('./pages/_footer.html')
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>

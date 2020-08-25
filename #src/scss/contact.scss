@@ -1,0 +1,144 @@
+.contact, .checkout{
+    padding: 96px 0 143px;
+    margin: 10px;
+    &__wrap{
+        max-width: 1170px;
+        margin: 0 auto;
+        .contact__header{
+            h2, p {text-align: center;}
+            h2{
+                font-size: 34px;
+                color: #454345;
+                padding-bottom: 22px;
+            }
+            p{
+                padding-bottom: 115px;
+                color: #898989;
+                font-size: 15px;
+            }
+        }
+        .contact-us, .checkout-list{
+            display: flex;
+            justify-content: space-between;
+            .contact__message, .contact__address, .checkout-list__address, .checkout-list__details{
+                .contact-line{
+                    h4{
+                        font-size: 24px;
+                        padding-bottom: 20px;
+                        color: #2d2b2d;
+                    }
+                    &::after{
+                        content: ' ';
+                        display: block;
+                        margin: 0 0 30px 2px;
+                        width: 68px;
+                        height: 2px;
+                        background: #f0002f;
+                    }
+                }
+                p{
+                    color: #747474;
+                    font-size: 15px;
+                    line-height: 20px;
+                }
+            }
+            .contact__message, .checkout-list__address{
+                flex: 0 1 60%;
+                form{
+                    padding-top: 10px;
+                    .names{
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    .inp{
+                        width: 337px;
+                        margin-top: 30px;
+                        p{
+                            color: #333e48;
+                            font-weight: 700;
+                            padding-bottom: 16px;
+                        }
+                        input, textarea{
+                            width: 100%;
+                            padding: 15px 10px;
+                            font-size: 15px;
+                            border-radius: 30px;
+                            border: 1px solid #ddd;
+                        }
+                    }
+                    .checkout-inp{
+                        p{
+                            font-weight: 400;
+                        }
+                        input{
+                            padding: 11px 10px;
+
+                        }
+                        textarea{
+                            height: 80px;
+                        }
+                    }
+                    .double-inp{
+                        input{
+                            margin: 7px 0;
+                        }
+                    }
+                    .full-input{
+                        width: 100%;
+                    }
+                    .textarea-input{
+                        width: 100%;
+                        textarea{
+                            width: 100%;
+                            border-radius: 20px;
+                            resize: none;
+                        }
+                    }
+                    input[type="submit"]{
+                        padding: 16px 47px;
+                        margin-top: 26px;
+                        color: #fff;
+                        font-size: 15px;
+                        font-weight: 700;
+                        border-radius: 30px;
+                        background: #c00a27;
+                    } 
+                }
+            }
+
+            .contact__address , .checkout-list__details{
+                flex: 0 1 34%;
+                &__info{
+                    a{color: #c00a27;}
+                }
+                &__schedule{
+                    padding: 50px 0;
+                    p{
+                        color: #333e48;
+                        font-weight: 700;
+                        padding-bottom: 16px;  
+                    }
+                    ul{
+                        li{
+                            color: #747474;
+                            display: flex;
+                            justify-content: space-between;
+                            padding-bottom: 11px;
+                        }
+                    }
+                }
+                &__careers{
+                    a{color: #c00a27;}
+                    p{
+                        color: #333e48;
+                        font-weight: 700;
+                        padding-bottom: 16px;  
+                    }
+                    span{
+                        color: #747474;
+                    }
+                }
+            }
+        }
+    }
+}

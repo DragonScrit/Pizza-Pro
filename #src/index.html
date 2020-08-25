@@ -1,0 +1,125 @@
+@@include("./pages/_head.html")
+<body>
+    <!-- Header -->
+    @@include("./pages/_header.html")
+    <!-- slider -->
+    <section class="slider">
+        <div class="slider__item">
+            <img src="./img/slider/Slogan.png" alt="">
+        </div>
+        <div class="slider__item">
+            <img src="./img/slider/Slogan.png" alt="">
+        </div>
+        <div class="slider__item">
+            <img src="./img/slider/Slogan.png" alt="">
+        </div>
+        <div class="slider__item">
+            <img src="./img/slider/Slogan.png" alt="">
+        </div>
+        <div class="slider__item">
+            <img src="./img/slider/Slogan.png" alt="">
+        </div>
+    </section>
+    <!-- specialOffer -->
+    <div class="wrap">
+        <section class="specialOffer">
+            <div class="mainPosition">
+                <div class="positionInfo">
+                    <h2>GRILLED CHICKEN</h2>
+                    <h3>SUMMER PIZZA</h3>
+                    <span>HOT & SPICY</span>
+                    <p>*ONLY IN LOCAL</p>
+                </div>
+            </div>
+            <div class="lastPosition">
+                <div class="lastPosition__top">
+                    <div class="otherPosition">
+                        <div class="otherPositionInfo">
+                            <h3>FREE</h3>
+                            <h4>FRIES</h4>
+                            <p>for online orders in <span>wendsdays</span></p>
+                        </div>
+                    </div>
+                    <div class="otherPosition">
+                        <div class="otherPosition">
+                            <div class="otherPositionInfo second">
+                                <h3>ICED</h3>
+                                <h4>COFFEE</h4>
+                                <p>*ONLY IN LOCAL</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lastPosition__bottom"><span>ONLINE</span></div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Pizza card -->
+    <section class="pizzaSets">
+        <div class="switcher">
+            <span>Pizza Sets</span>
+        </div>
+        <div class="pizzaCards">
+            @@include('./pages/cardPizza.html')
+            @@include('./pages/cardPizza.html')
+            @@include('./pages/cardPizza.html')
+        </div>
+    </section>
+
+    <!-- promo -->
+    <div class="promo">
+        <p>FREE DELIVERY WITH</p>
+        <h3>PIZZA OF THE DAY</h3>
+        <div class="promoInfo">
+            <div class="promoInfo__price">
+                <span>$</span>
+                <span>9</span>
+                <span class="cent">99</span>
+            </div>
+            <div class="promoInfo__pizza">
+                <ul>
+                    <li>- VEGGE LOVER</li>
+                    <li>- HAWAII</li>
+                    <li>- SUPREME</li>
+                </ul>
+            </div>
+        </div>
+        <button>Order Now</button>
+    </div>
+
+    <!-- Drink -->
+    @@include("./pages/drinks.html")
+
+    <!-- Process Cooking -->
+    <section class="cooking">
+        <div class="cooking__wrap">
+            <div class="step">
+                <img src="./img/Cooking/bag_icon.png" alt="bag">
+                <h3>Best Quality</h3>
+                <p>Praesent pulvinar neque pellentesque mattis pretium.</p>
+            </div>
+            <div class="step">
+                <img src="./img/Cooking/clock_icon.png" alt="clock">
+                <h3>On Time</h3>
+                <p>Praesent pulvinar neque pellentesque mattis pretium.</p>
+            </div>
+            <div class="step">
+                <img src="./img/Cooking/chef_icon.png" alt="chef">
+                <h3>MasterChefs</h3>
+                <p>Praesent pulvinar neque pellentesque mattis pretium.</p>
+            </div>
+            <div class="step">
+                <img src="./img/Cooking/food_icon.png" alt="food">
+                <h3>Taste Food</h3>
+                <p>Praesent pulvinar neque pellentesque mattis pretium.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    @@include("./pages/_footer.html")
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>

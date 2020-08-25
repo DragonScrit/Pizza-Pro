@@ -1,0 +1,99 @@
+.wrap{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.specialOffer{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: 60px auto 87px; 
+}
+.mainPosition{
+    background: #ccc;
+    width: 48.717%;
+    height: 442px;
+    position: relative;
+    cursor: pointer;
+    .positionInfo{
+        margin: 53px 0 0 38px;
+        & h2{
+            font-size: 80px;
+            font-weight: 700;
+            color: #fff;
+        }
+        & h3{
+            font-size: 42px;
+            font-weight: 200;
+            color: #fff;
+            padding-bottom: 25px;
+        }
+        & span{
+            font-size: 29px;
+            font-weight: 300;
+            background: #f0002f;
+            padding: 13px 23px 6px 23px;
+            border-radius: 10px;
+            color: #fff;
+        }
+        & p{
+            position: absolute;
+            bottom: 28px;
+            font-size: 14px;
+            color: #fff;
+        }
+    }
+}
+.lastPosition{
+    width: 48.717%;
+    height: 442px;
+    &__top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 22px;
+        .otherPosition{
+        cursor: pointer;
+        width: 270px;
+        height: 210px;
+        background: #ccc;
+        &Info{
+            float: right;
+            text-align: center;
+            width: 85px;
+            margin: 33px 40px 0 0;
+        }
+        .second{ 
+            width: 110px;
+            & p{
+                padding-top: 12px;
+            }
+        }
+        & h3 {
+            color: #fff;
+            font-size: 50px;
+            font-weight: 200;
+        }
+        & h4 {
+            color: #fff;
+            font-size: 60px;
+            font-weight: 700;
+        }
+        & p {
+            color: #fff;
+            font-size: 16px;
+            & span{
+                border-bottom: 1px solid #fff;
+            }
+        }
+        }
+    }
+    &__bottom{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #ccc;
+        height: 210px;
+        cursor: pointer;
+        font-weight: 700;
+        color: #fff;
+        font-size: 60px;
+    }
+}

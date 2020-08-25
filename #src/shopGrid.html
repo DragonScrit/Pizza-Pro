@@ -1,0 +1,39 @@
+@@include("./pages/_head.html")
+<body>
+    @@include('./pages/_header.html')
+
+    <!-- Pizza card -->
+    <section class="pizzaSets">
+        <div class="pizzaFilter">
+            <button>SHOW ALL</button>
+            <button>VEGGIE</button>
+            <button>HOT & SPICY</button>
+            <button>MEAT</button>
+        </div>
+        <div class="pizzaCards">
+            @@include('./pages/cardPizza.html')
+            @@include('./pages/cardPizza.html')
+            @@include('./pages/cardPizza.html')
+            @@include('./pages/cardPizza.html')
+            @@include('./pages/cardPizza.html')
+            @@include('./pages/cardPizza.html')
+            @@include('./pages/cardPizza.html')
+            @@include('./pages/cardPizza.html')
+            @@include('./pages/cardPizza.html')
+        </div>
+        <div class="pageSwicher">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+            <button>NEXT PAGE</button>
+        </div>
+    </section>
+
+    @@include('./pages/_footer.html')
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>

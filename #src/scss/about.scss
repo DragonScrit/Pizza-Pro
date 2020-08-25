@@ -1,0 +1,78 @@
+.about{
+    padding: 125px 0 143px;
+    &__wrap,{
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+    h2, p {text-align: center;}
+    h2{
+        font-size: 34px;
+        color: #454345;
+        padding-bottom: 22px;
+    }
+    p{
+        padding-bottom: 60px;
+        color: #898989;
+        font-size: 15px;
+    }
+    &-carts{
+        display: flex;
+        justify-content: space-between;
+        &__cart{
+            width: 370px;
+            img{
+                width: 100%;
+            }
+            h4{
+                font-size: 16px;
+                font-weight: 700;
+                padding: 33px 0;
+                color: #2d2b2d;
+            }
+            span{
+                color: #666666;
+                font-size: 16px;
+                line-height: 25px;
+                text-align: justify;
+            }
+        }
+    }
+    .pizza-fullscreen{
+        max-width: 1920px;
+        margin: 70px auto 110px;       
+        img{
+            width: 100%;
+        }
+    }
+    .about-pizza{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 85px;
+        border-bottom: 1px solid #eee;
+        &__text{
+            max-width: 360px;
+            color: #666666;
+            font-size: 16px;
+            line-height: 25px;
+            text-align: justify;
+            margin: 15px;
+        }
+    }
+    h3{
+        font-size: 34px;
+        color: #454345;
+        text-align: center;
+        padding: 145px 0 50px;
+    }
+    .out-source{
+        // text-align: center;
+        display: flex;
+        &__img{
+            padding: 45px 40px;
+            border-left: 1px solid #eee;
+            &:first-child{
+                border: none;
+            }
+        }
+    }
+}

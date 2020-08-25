@@ -1,0 +1,144 @@
+@@include("./pages/_head.html")
+<body>
+    <!-- Header -->
+    @@include('./pages/_header.html')
+    <div class="checkout">
+        <div class="contact__wrap">
+            <div class="order-nav">
+                <div class="order-nav__breadcrumbs">
+                    <a href="./index.html">Home <span>&rang;</span></a>
+                    <a href="./shopGrid.html">Shop <span>&rang;</span></a>
+                    <span>Shopping Cart</span>
+                </div>
+            </div>
+            <div class="order-status">
+                <div class="order-status__step">
+                    <div class="order-status__step-state first-state confirm">
+                        <p>1</p>
+                        <span>Shopping Cart</span>
+                    </div>
+                    <div class="order-status__step-line"></div>
+                </div>
+                <div class="order-status__step">
+                    <div class="order-status__step-state second-state confirm">
+                        <p>2</p>
+                        <span>Checkout</span>
+                    </div>
+                    <div class="order-status__step-line"></div>
+                </div>
+                <div class="order-status__step">
+                    <div class="order-status__step-state third-state">
+                        <p>3</p>
+                        <span>Order Complete</span>
+                    </div>
+                </div>
+            </div>
+            <div class="checkout-list">
+                <div class="checkout-list__address">
+                    <div class="contact-line"><h4>Delivery Address</h4></div>
+                    <form>
+                        <div class="names">
+                            <div class="inp checkout-inp">
+                                <p>First Name</p>
+                                <input type="text">
+                            </div>
+                            <div class="inp checkout-inp">
+                                <p>Last Name</p>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="inp full-input checkout-inp">
+                            <p>Company Name</p>
+                            <input type="text">
+                        </div>
+                        <div class="names checkout-inp">
+                            <div class="inp">
+                                <p>Email Address*</p>
+                                <input type="text">
+                            </div>
+                            <div class="inp">
+                                <p>Phone Number*</p>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="inp full-input checkout-inp double-inp">
+                            <p>Address*</p>
+                            <input type="text" placeholder="Street Address">
+                            <input type="text" placeholder="Apartment, Suite, Unit etc. (optional)">
+                        </div>
+                        <div class="names checkout-inp">
+                            <div class="inp">
+                                <p>Post code / Zip*</p>
+                                <input type="text">
+                            </div>
+                            <div class="inp">
+                                <p>Town / City*</p>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="inp textarea-input checkout-inp">
+                            <p>Order Notes</p>
+                            <textarea cols="30" rows="10" ></textarea>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="checkout-list__details">
+                    <div class="contact__address__info">
+                        <div class="contact-line"><h4>Order Details</h4></div>
+                    </div>
+
+                    <div class="products">
+                        <h4>Products</h4>
+                        <div class="products-info">
+                            <div class="products-info__item">
+                                <div class="main-item">
+                                    <p>
+                                        <span>2x</span>
+                                        <span>Summer Pizza</span>
+                                    </p>
+                                    <span>$39.80</span>
+                                </div>
+                                <div class="other-item">
+                                    <p class="desc">Pineapple, capsicum, onion and mozzarella.</p>
+                                    <p><span>Crust:</span> Original Thin Crust</p>
+                                    <p><span>Size:</span> 28 cm</p>
+                                </div>
+                            </div>
+                            <div class="products-info__item">
+                                <div class="main-item">
+                                    <p>
+                                        <span>1x</span>
+                                        <span>Cola Bottle</span>
+                                    </p>
+                                    <span>$2.90</span>
+                                </div>
+                                <div class="other-item">
+                                    <p><span>Size:</span> 28 cm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products-element">
+                            <p><span>Subtotal</span><span>$42.70</span></p>
+                        </div>
+                        <div class="products-element">
+                            <p><span>Delivery</span><span class="delivery">Free Delivery on Mondays</span></p>
+                        </div>
+                        <div class="products-element">
+                            <p><span>Order Total</span><span class="total">$42.70</span></p>
+                        </div>
+                        <a href="complete.html"><input type="submit" value="Place Order"></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Footer -->
+    @@include('./pages/_footer.html')
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>
